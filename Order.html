@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Css/Order.css">
+    <title>Giỏ hàng của bạn</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <p class="giohang">Giỏ hàng:</p>
+            <div class="row">
+
+            </div>
+            <div class="pay">
+                <button onclick="pay();">Thanh toán</button>
+            </div>
+            <div class="home">
+                <a href="./index.html">Quay về Trang chủ</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var gioHang = [];
+        $(document).ready(function () {
+            gioHang = JSON.parse(localStorage.getItem('gioHang'));
+            var html = "";
+            if (gioHang && gioHang.length > 0) {
+                for (var i = 0; i < gioHang.length; i++) {
+                    html += "<div class=" + 'col-lg-6' + ' col-md-6' + ' col-sm-6' + ' col-xs-12' + ">" + "<div class=" + 'border-sp' + ">" + "<p class=" + 'content-sp' + ">" + (i + 1) + ". Sản phẩm: " + gioHang[i].name + ", Giá tiền: " + gioHang[i].price +
+                        ", Số lượng: " + gioHang[i].quantity + "</p>" + "<p class=" + 'button' + ">" + " <button onclick='reduce(" + i +
+                        ")'>-</button> <button onclick='remove(" +
+                        i + ")'>x</button>" + "</p>" + "<img src= " + gioHang[i].url_GH + ">" + "</div>" + "</div>";
+                }
+            } else {
+                html += "<p class=" + 'gh_trong' + ">Giỏ hàng trống</p>";
+                $('.pay').hide();
+                $('.giohang').hide();
+                
+            }
+            $('.row').html(html);
+        });
+
+        function remove(index) {
+            gioHang.splice(index, 1);
+            var html = "";
+            if (gioHang && gioHang.length > 0) {
+                for (var i = 0; i < gioHang.length; i++) {
+                    html += "<div class=" + 'col-lg-6' + ' col-md-6' + ' col-sm-6' + ' col-xs-12' + ">" + "<div class=" + 'border-sp' + ">" + "<p class=" + 'content-sp' + ">" + (i + 1) + ". Sản phẩm: " + gioHang[i].name + ", Giá tiền: " + gioHang[i].price +
+                        ", Số lượng: " + gioHang[i].quantity + "</p>" + "<p class=" + 'button' + ">" + " <button onclick='reduce(" + i +
+                        ")'>-</button> <button onclick='remove(" +
+                        i + ")'>x</button>" + "</p>" + "<img src= " + gioHang[i].url_GH + ">" + "</div>" + "</div>";
+                }
+            } else {
+                html += "<p class=" + 'gh_trong' + ">Giỏ hàng trống</p>";
+                $('.pay').hide();
+                $('.giohang').hide();
+            }
+            window.localStorage.setItem('gioHang', JSON.stringify(gioHang));
+            $('.row').html(html);
+        }
+
+        function reduce(index) {
+            gioHang[index].quantity--;
+            if (gioHang[index].quantity == 0) {
+                remove(index);
+            } else {
+                var html = "";
+                for (var i = 0; i < gioHang.length; i++) {
+                    html += "<div class=" + 'col-lg-6' + ' col-md-6' + ' col-sm-6' + ' col-xs-12' + ">" + "<div class=" + 'border-sp' + ">" + "<p class=" + 'content-sp' + ">" + (i + 1) + ". Sản phẩm: " + gioHang[i].name + ", Giá tiền: " + gioHang[i].price +
+                        ", Số lượng: " + gioHang[i].quantity + "</p>" + "<p class=" + 'button' + ">" + " <button onclick='reduce(" + i +
+                        ")'>-</button> <button onclick='remove(" +
+                        i + ")'>x</button>" + "</p>" + "<img src= " + gioHang[i].url_GH + ">" + "</div>" + "</div>";
+                }
+                window.localStorage.setItem('gioHang', JSON.stringify(gioHang));
+                $('.row').html(html);
+            }
+        }
+        function pay() {
+            result = window.confirm("Bạn muốn thanh toán giỏ hàng phải không ?");
+            if (result) {
+                window.localStorage.setItem('gioHang', "[]");
+                $('.row').html("<p class='thanhtoan'>"+"Thanh toán thành công</p>");
+                $('.pay').hide();
+                $('.giohang').hide();
+            }
+        }
+    </script>
+</body>
+
+</html>

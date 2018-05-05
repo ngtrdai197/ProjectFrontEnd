@@ -1,0 +1,707 @@
+.clearfix{
+    clear: both;
+}
+body{
+    line-height: 1;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Menu cho Ipad pro */
+.giohang{
+    top: 25px;
+    position: absolute;
+    right: 5px;
+}
+.logo-menu{
+    margin-left: 15px;
+}
+.menu-desktop{
+    position: relative;
+    background: #696969;
+}
+.fix-menu{
+    float: left;
+}
+/* Kết thúc Menu dành cho Ipad pro */
+
+.container-fluid{
+    padding: 0;
+}
+.header .header-desktop .menu-desktop ul li.item {
+    display: inline-block;
+    list-style: none;
+    padding: 30px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.header .header-desktop  .menu-desktop ul li.item a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+.menu-desktop ul li:hover >a{
+    color: white !important;
+}
+.menu-desktop ul li:hover{
+    border-bottom: 3px solid orangered;
+}
+.dangNhap{
+    display: none;
+    height: 0;
+    transition: all ease-in-out 1.5s;
+    text-align: center;
+    line-height: 25px;
+    opacity: 0;
+}
+.dangNhap.active_login{
+    display: block;
+    transition: all 1.5s;
+    padding: 15px 0 0 0;
+    position: relative;
+    height: 325px;
+    width: 100%;
+    background: #333;
+    text-align: center;
+    line-height: 25px;
+    opacity: 1;
+}
+.form-dangNhap span a:hover{
+    color: white;
+}
+.btnLogin button:hover{
+    background: white;
+    border: 1px solid #ed3737;
+    transition: all ease-in-out 1s;
+    color: #ed3737;
+}
+.form-dangNhap {
+    padding: 20px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 50%; */
+}
+.btnLogin button{
+    color: #fff;
+    background: #ed3737;
+    border: 1px solid #fff;
+}
+.forgot{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.dangNhap.active_login p{
+    color: #e47f13;
+    margin: 0;
+    padding: 15px 0 2px 0;
+}
+.user input[type="tex"]{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+.pass input[type="password"]{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+.form-dangNhap p{
+    color: #e47f13;
+    font-size: 18px;
+}
+
+.user input[type="tex"]:focus 
+{
+    border-bottom: 2px solid white;
+}
+.pass input[type="password"]:focus
+{
+    border-bottom: 2px solid white;
+}
+.form-dangNhap input::placeholder{
+    font-size: 12px;
+}
+li#search{
+    cursor: pointer;
+}
+.timKiem{
+    display: none;
+    height: 0;
+    transition: all ease-in-out 1.5s;
+}
+.timKiem.active{
+    display: block;
+    position: relative;    
+    width: 100%;
+    height: 80px;
+    background: #333;
+    border-bottom: 3px solid gray;   
+}
+.timKiem.active #form-search{
+    position: absolute;
+    display: block;
+    top: 32%;
+    right: 40%;
+    margin: 0;
+}
+.timKiem.active #form-search input{
+    border: none;
+    font-size: 25px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+input::placeholder{
+    color: #ddd;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.timKiem.active #form-search input:focus{
+    border-bottom: 3px solid #fff;
+}
+#form-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.btnSearch{
+    display: none;
+    position: absolute;
+    
+}
+button#btn{
+    
+    font-size: 17px;
+    padding: 5px;
+}
+.timKiem.active .btnSearch{
+    margin: 0;
+    top: 33%;
+    right: 30%;
+    display: block;
+    float: right;
+}
+.timKiem.active .btnSearch #btn:hover{
+    background: #ed3737;
+    color: white;
+}
+.container-fluid{
+    padding: 0;
+}
+.header{
+    width: 100%;
+}
+.header .container-fluid .row{
+    margin: 0;
+}
+.header .content-desktop .menu-head li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+}
+.header .content-desktop .menu-head a{
+    text-decoration: none;
+    color: white;
+}
+.header .content-desktop span{
+    color: yellow;
+    font-size: 13px;
+}
+
+.header .content-desktop li{
+    color: white;
+}
+.header .fa-phone{
+    font-size: 18px;
+}
+.header .content-desktop{
+    background: #333;
+    height: 55px;
+    padding: 18px 0 0 37px;
+}
+
+.logo-menu{
+    float: left;
+    padding-top: 14px;
+}
+.menu-desktop {
+    background: #ececec;
+}
+
+ul.list-menu{
+    float: left;
+    margin-bottom: 0;
+    position: relative;
+}
+button.cart-icon.dropdown-toggle {
+    background: #ed3737;
+    padding: 5px 9px;
+    border: 1px solid red;
+}
+
+.giohang i.fa.fa-shopping-cart {
+    color: white;
+}
+span#cart-total >span {
+    color: white;
+    font-size: 12px;
+}
+
+.logo{
+    max-width: 100%;
+    margin-top: -13px;
+}
+
+/* Kết thúc header */
+
+.sologan{
+    text-align: center;
+    padding-top: 7em;
+}
+
+.background-head .sologan span{
+    font-size: 40px;
+    color: white;
+}
+.background-head li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px;
+}
+.link{
+    background: #333;
+    height: 50px;
+    color: white;
+    padding: 15px;
+}
+.link ul li a{
+    color: white;
+}
+.background{
+    background-image: url(D:/CODE/Front-End/Project/image/background_pagetily.jpg);
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Content-product */
+
+.content .content-product img{
+    width: 260px;
+    height: 260px;
+}
+
+.content .content-product
+.image{
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 65px;
+}
+.product-details{
+    padding: 15px;
+}
+
+.title-head {
+    font-size: 40px;
+    color: black;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+span#cart-total a{
+    color: white ;
+    text-decoration: none !important;
+}
+span#cart-total a:hover{
+    color: #ed3737 ;
+}
+
+.product-details ul.head1{
+    line-height: 40px;
+    padding: 0;
+    border-bottom: 1px solid gray;
+    
+}
+.add-product ul{
+    padding: 0;
+}
+
+li.price {
+    font-size: 25px;
+    color: orangered;
+}
+li{
+    list-style: none;
+}
+
+select{
+    padding: 8px;
+    width: 100%;
+    font-family: cursive;
+    font-size: 15px;
+}
+.add-product ul li{
+    float: left;
+    cursor: pointer;
+    padding: 0 2px;
+}
+
+.add-product .fa-minus{
+    padding: 15px 15px;
+    border: 1px solid black;
+}
+.add-product .fa-plus{
+    padding: 15px 15px;
+    border: 1px solid black;
+}
+
+i.fa.fa-retweet{
+    padding: 15px 15px;
+    border: 1px solid black;
+    color: black;
+}
+
+i.fa.fa-heart-o{
+    padding: 15px 15px;
+    border: 1px solid black;
+    color: black;
+}
+ul.details-right{
+    margin: 0 0 0 30px;
+}
+ul.details-right li{
+    margin-left: 20px;
+}
+.add{
+    margin-top: 19px;
+}
+.themvaogio button{
+    font-size: 20px;
+    padding: 12px 30px;
+    background: #ed3737 ;
+    border: 1px solid #ed3737 ;
+    color: white;
+}
+form.themvaogio{
+    margin-top: 5px;
+}
+.table_click {
+    margin: 15px 0 15px 15px;
+}
+.sp-lienquan{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.sp-lienquan .sp{
+    text-shadow: 2px 2px 2px #cc0000;
+    font-size: 21px;
+    color: black;
+    border-bottom: 2px solid orangered;
+}
+.col-lg-3.col-sm-6.col-xs-12 {
+    height: 410px;
+    cursor: pointer;
+}
+.border-grid {
+    border: 1px solid #696969;
+    height: 330px;
+    position: relative;
+}
+input[type="text"] {
+    border: 1px solid black;
+}
+.border-grid .scale-image {
+    overflow: hidden;
+    text-align: center;
+}
+
+.content-price {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.price-old {
+    text-decoration: line-through;
+    color: #828282;
+}
+
+.star{
+    float: right;
+    margin-right: 5px;
+}
+span.fa.fa-stack {
+    font-size: 6px;
+    color: #e47f13;
+}
+.content-price a {
+    text-decoration: none;
+    color: blue;
+}
+.content .row .hover-image {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    height: 61px;
+    background-color: #ddd;
+    color: black;
+    overflow: hidden; /*chống tràn khi hover khỏi bể màu */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.chitiet span {
+    border-left: 1px solid black;
+}
+
+.hover-image span {
+    float: left;
+    padding: 23px 10px;
+    width: 50%;
+    font-size: 13px;
+}
+.priceleft {
+    float: left;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.hover-image a {
+    color: black;
+    text-decoration: none;
+}
+.content .row .new {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    border: 2px solid #8e8e8e;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.sp-lienquan .row{
+    margin-top: 20px;
+}
+.danhgia form input,textarea{
+    margin-bottom: 10px;
+}
+.danhgia{
+    padding: 10px 10px;
+}
+.fix-form{
+    margin-bottom: 15px;
+}
+div#mota {
+    padding: 10px;
+}
+div#danhgia {
+    padding: 10px 5px;
+}
+textarea{
+    border: none;
+    width: 100%;
+    height: 110px;
+    border: 1px solid black;
+}
+form.form-danhgia .fullname{
+    height: 30px;
+    width: 100%;
+}
+
+
+/* Footer */
+
+.footer{
+    background: #DCDCDC;
+    width: 100%;
+    border-top: 1px solid burlywood;
+}
+
+.footerlast{
+    width: 100%;
+    position: relative;
+    padding: 0 45px;
+}
+
+.footer .row{
+    margin: 0;
+}
+.logol img{
+    margin-left: 25px;
+    
+}
+.address{
+    margin-left: 25px;
+    margin-top: 15px;
+    float: left;
+}
+.address i{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.col-lg-3 ul li{
+    list-style: none;
+    line-height: 35px;
+}
+.col-lg-3 ul li a{
+    color: black;
+    text-decoration: none;
+}
+.address p a{
+    color: black;
+    text-decoration: none;
+}
+.iffooter{
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footerlast .icon-footer-right ul li{
+    display: inline-block;
+    padding-right: 25px;
+}
+.footer-icon:hover{
+    background: white;
+    border: 1px solid white;
+}
+.footer-icon:hover i{
+    color: #e47f13;
+}
+.icon-footer-right{
+    margin-top: 15px;
+    width: 229px;
+}
+.icon-footer-right ul li i{
+    color: black;
+    font-size: 27px;
+}
+.footerlast form{
+    font-size: 14px;
+}
+.footerlast .row h3{
+    font-size: 19px;
+}
+.footer .footerlast ul{
+    padding: 0;
+    margin: 0;
+}
+.footer .footerlast .col-lg-3{
+    padding: 0;
+}
+.icon-footer-right a i:hover{
+    color: skyblue;
+}
+.source{
+    text-align: center;
+}
+.back-to-top{
+    font-size: 80px;
+    position: fixed;
+    bottom: 6px;
+    right: 40px;
+    cursor: pointer;
+}
+.back-to-top:hover{
+    color: skyblue;
+}
+
+ul.menu-head{
+    padding: 0;
+    margin-left: 123px;
+}
+.footer-icon{
+    width: 77px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.footer-icon:hover{
+    background: white;
+}
+.footer-icon:hover i{
+    color: #e47f13;
+}
+
+.footer .footer-head .col-lg-4{
+    padding-left: 30px;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+.footer .footer-head i{
+    font-size: 50px;
+    padding: 11px;
+}
+.footer .footer-head .row .footer-content{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.footer .footer-head a{
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 2px;
+    font-size: 25px;
+    color: black;
+}
+.footer .footer-head p{
+    font-size: 12px;
+    margin: 10px 0;
+}
+i.fa.fa-usd{
+    padding-left: 23px;
+}
+.footer-head {
+    padding: 15px 0;
+}
+.footer .footer-head .row{
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin: 0 60px;
+}
+.footerlast a:hover{
+    color: blue;
+}
+/* End Footer */
+
+/* Animate */
+span.back-to-top{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #00567d;
+    background: #04a9f5;
+    box-shadow: 0 0 0 5px #fff, 0 5px 25px rgba(0,0,0,.8);
+}
+span.back-to-top .fa{
+    position: absolute;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffff;
+    animation:animate 1.5s linear infinite;
+    overflow: hidden;
+}
+@keyframes animate{
+    0%{
+        top: 20%;
+    }
+    40%{
+        top: 60%;
+    }
+    60%{
+        top: 30%;
+    }
+    80%{
+        top: 60%;
+    }
+    100%{
+        top: 80%;
+    }
+}

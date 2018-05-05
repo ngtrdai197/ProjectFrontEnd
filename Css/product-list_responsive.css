@@ -1,0 +1,373 @@
+.header-desktop{
+    display: block;
+}
+.content-mobile{
+    display: none;
+    padding: 6px 0px;
+}
+.content-mobile ul li{
+    list-style: none;
+    line-height: 35px;
+    display: inline-block;
+}
+.content-mobile span{
+    font-size: 15px;
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 1px solid gray;
+}
+.content-mobile .menu-head{
+    margin-top: 15px;
+    margin-left: 0;
+}
+.content-bottom .mobile{
+    display: none;
+}
+.price-left{
+    display: none;
+}
+.star{
+    float: none;
+}
+.footer-mobile{
+    display: none;
+}
+.footer{
+    display: block;
+}
+.order-mobile{
+    display: none;
+}
+
+@media all and (max-width:992px){
+    .timKiem{
+        height: 0px;
+    }
+    p#form-search{
+        float: left !important;
+        top: 15px !important;
+        left: 5px !important;
+    }
+    input[type="text"]{
+        font-size: 17px !important;
+    }
+    p.btnSearch{
+        float: right !important; 
+         top: 15px !important; 
+         right: 5px !important;
+    }
+    button#btn{
+        font-size: 12px;
+    }
+    .timKiem.active{
+        height: 60px;
+        overflow: hidden;
+    }
+    .header-desktop{
+        display: none;
+    }
+    .menu-desktop{
+        background: #696969;
+    }
+    .content-mobile{
+        display: block;
+    }
+    .content-mobile{
+        text-align: center;
+    }
+    /* Sửa */
+    .logo-menu {
+        padding: 10px 0;
+        float: left;
+    }
+    /* Sửa */
+    .giohang {
+        position: inherit;
+        margin: 0;
+    }
+    .content-mobile span{
+        padding-bottom: 2px;
+        border: none;
+    }
+    .header{
+        background: #c3bbbb;
+        position: relative;
+    }
+    button.menu-icon{
+        float: right;
+        font-size: 39px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .sologan{
+        text-align: center;
+    }
+    .background-head .sologan span{
+        font-size: 25px;
+    }
+    .background-head .background img{
+        height: 150px;
+    }
+    section.background-head{
+        background: #827564;
+        position: relative;
+    }
+    .content-mobile .list-menu{
+        display: block;
+    }
+    .content-mobile .item{
+        display: list-item;
+    }
+    .content-mobile .item a{
+        display: list-item;
+        font-size: 20px;
+        padding: 4px 0;
+        color: black;
+        border-bottom: 1px solid gray;
+        text-decoration: none;
+    }
+    .content-mobile .list-menu{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        top: 245px;
+        left: 0;
+        background: #f1f2f7;
+        height: 0;
+        overflow: hidden;
+        transition: height 1s ease-in-out;
+        padding: 0;
+    }
+    .list-menu.open {
+        height: 220px;
+    }
+    .content-mobile .menu-head li{
+        padding: 0 20px;
+    }
+    .content-mobile .giohang-mobile button.cart-icon.dropdown-toggle {
+        padding: 5px;
+        background: gray;
+    }
+    .col-lg-3.col-md-9 {
+        margin-bottom: 35px;
+    }
+    .content-price{
+        text-align: center;        
+    }
+    
+    /* Footer */
+    .footer{
+        display: none;
+    }
+    .footer-mobile{
+        display: block;
+        background: #ddd;
+    }
+    .footer-mobile .address a{
+        text-decoration: none;
+        color: black;
+    }
+    .footer-mobile .dangki li{
+        list-style: none;
+        display: inline-block;
+    }
+    .footer-mobile .dangki li i{
+        font-size: 28px;
+        padding: 0 10px;
+    }
+    .footer-mobile .icon-footer-right ul{
+        padding: 0;
+    }
+    .footer-mobile .row{
+        padding-top: 15px;
+        border-top: 1px solid grey;
+    }
+    .dangki{
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    .footer-mobile .info{
+        margin-left: 25px;
+    }
+    .footer-mobile .info a{
+        text-decoration: none;
+        color: black;
+    }
+    .source{
+        margin-top: 15px;
+    }
+    span.back-to-top .fa{
+        font-size: 40px;
+    }
+    span.back-to-top {
+        width: 40px;
+        height: 40px;
+    }
+    .order-mobile{
+        display: block;
+    }
+    .order-mobile{
+        position: relative;
+        border: 1px solid grey;
+        height: 63px;
+        border-top: none;
+        padding: 8px;
+        background: #ececec;
+    }
+    .order-mobile .chitiet{
+        position: absolute;
+        right: 8px;
+    }
+    .order-mobile a{
+        text-decoration: none;
+        color: black;
+    }
+    .order-mobile span{
+        position: absolute;
+        padding: 15px 5px;
+        border: 1px solid grey;
+    }
+
+    /* End-Footer */
+}
+/* Menu dành cho Desktop màn hình cỡ lớn */
+@media all and (min-width:1200px){
+    .header .header-desktop .menu-desktop ul li.item {
+        display: inline-block;
+        list-style: none;
+        padding: 30px 22px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .cont{
+        text-align: center;
+    }
+    .logo-menu {
+        margin-left: 50px;
+    }
+    span.fa.fa-stack {
+        font-size: 8px;
+        color: #e47f13;
+    }
+    .border-grid {
+        height: 327px;
+        position: relative;
+    }
+    .slide-background {
+        height: 367px;
+    }
+
+    .menu-desktop ul li:hover{
+        background: #696969;
+    }
+    .menu-desktop .list-menu li:hover a{
+        color: white;
+    }
+    button.cart-icon.dropdown-toggle:hover{
+        background: white;
+    }
+    button.cart-icon.dropdown-toggle:hover button.cart-total{
+        color:#ed3737;
+    }
+    button.cart-icon.dropdown-toggle:hover span#cart-total >span{
+        color:#ed3737;
+    }
+    button.cart-icon.dropdown-toggle:hover i.fa.fa-shopping-cart{
+        color:#ed3737;
+    }
+    .content-desktop .menu-head li:hover a{
+        color: orangered;
+    }
+    .content-desktop .menu-head li:hover i{
+        color: orangered;
+    }
+    .dropdown-menu li a:hover{
+        color: orangered;
+    }
+    
+    .scale-image:hover .hover-image{
+        -webkit-transform:rotateY(360deg);
+        opacity: 1;
+        transition: all ease 4s;
+    }
+    .scale-image .sp-hover :hover{
+        background: #DCDCDC;
+    }
+    .content-price {
+        padding: 7px 0;
+    }
+    .border-grid .content-price:hover a{
+        color: darkblue;
+    }
+    .border-grid:hover .new{
+        border: 1px solid orangered;
+        background: #e8e8e8;
+        color: black;
+    }
+    .price .price-left{
+        display: none;
+    }
+    .price .star{
+        float: none;
+    }
+}
+
+@media all and (min-width:1095px) and (max-width: 1220px){
+    .header .header-desktop .menu-desktop ul li.item{
+        padding: 30px 10px;
+    }
+}
+@media all and (min-width:1300px){
+    .giohang{
+        right: 30px;
+    }
+}
+@media all and (min-width:1200px){
+    .col-lg-4.col-md-4.col-sm-6.col-xs-12{
+        height: 370px;
+    }
+}
+@media all and (max-width:1199px){
+    .order-mobile{
+        display: block;
+    }
+    .order-mobile{
+        position: relative;
+        border: 1px solid grey;
+        height: 63px;
+        border-top: none;
+        padding: 8px;
+        background: #ececec;
+    }
+    .order-mobile .chitiet{
+        position: absolute;
+        right: 8px;
+    }
+    .order-mobile a{
+        text-decoration: none;
+        color: black;
+    }
+    .order-mobile span{
+        position: absolute;
+        padding: 15px 5px;
+        border: 1px solid grey;
+    }
+}
+@media all and (min-width:992px) and (max-width: 1199px){
+    .order-mobile{
+        padding: 8px 3px;
+    }
+    .order-mobile span {
+        padding: 15px 5px;
+    }
+    .order-mobile .chitiet{
+        right: 3px;
+    }
+    span.order-sp{
+        font-size: 12px;
+    }
+    span.chitiet{
+        font-size: 12px;
+    }
+}

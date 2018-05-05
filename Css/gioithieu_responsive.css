@@ -1,0 +1,219 @@
+.header-desktop{
+    display: block;
+}
+.content-mobile{
+    display: none;
+    padding: 6px 0px;
+}
+.content-mobile ul li{
+    list-style: none;
+    display: inline-block;
+}
+.content-mobile span{
+    font-size: 15px;
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 1px solid gray;
+}
+.content-mobile .menu-head{
+    margin-top: 15px;
+    margin-left: 0;
+}
+.content-bottom .mobile{
+    display: none;
+}
+.footer-mobile{
+    display: none;
+}
+.footer{
+    display: block;
+}
+
+@media all and (max-width:992px){
+    .header-desktop{
+        display: none;
+    }
+    
+    .menu-desktop{
+        background: #696969;
+    }
+    .content-mobile{
+        display: block;
+    }
+    .content-mobile{
+        text-align: center;
+    }
+    /* Sửa */
+    .logo-menu {
+        padding: 10px 0;
+        float: left;
+    }
+    /* Sửa */
+    .giohang {
+        position: inherit;
+        margin: 0;
+    }
+    .content-mobile span{
+        padding-bottom: 2px;
+        border: none;
+    }
+    .header{
+        background: #c3bbbb;
+        position: relative;
+    }
+    button.menu-icon{
+        float: right;
+        font-size: 39px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .sologan{
+        text-align: center;
+        /* margin-top: -6em; */
+    }
+    .background-head .sologan span{
+        font-size: 25px;
+    }
+    .background-head .background img{
+        height: 150px;
+    }
+    section.background-head{
+        /* height: 210px; */
+        background: #827564;
+        position: relative;
+    }
+    .content-mobile .list-menu{
+        display: block;
+    }
+    .content-mobile .item{
+        display: list-item;
+        line-height: 36px;
+    }
+    .content-mobile .item a{
+        display: list-item;
+        font-size: 20px;
+        padding: 4px 0;
+        color: black;
+        border-bottom: 1px solid gray;
+        text-decoration: none;
+    }
+    .content-mobile .list-menu{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        top: 230px;
+        left: 0;
+        background: #f1f2f7;
+        height: 0;
+        overflow: hidden;
+        transition: height 1s ease-in-out;
+        padding: 0;
+    }
+    .list-menu.open {
+        height: 225px;
+    }
+    .content-mobile .menu-head li{
+        padding: 0 20px;
+    }
+    .content-mobile .giohang-mobile button.cart-icon.dropdown-toggle {
+        padding: 5px;
+        background: gray;
+        border: none;
+    }
+
+    /* Footer */
+    .footer{
+        display: none;
+    }
+    .footer-mobile{
+        display: block;
+        background: #ddd;
+    }
+    .footer-mobile .address a{
+        text-decoration: none;
+        color: black;
+    }
+    .footer-mobile .dangki li{
+        list-style: none;
+        display: inline-block;
+    }
+    .footer-mobile .dangki li i{
+        font-size: 28px;
+        padding: 0 10px;
+    }
+    .footer-mobile .icon-footer-right ul{
+        padding: 0;
+    }
+    .footer-mobile .row{
+        padding-top: 15px;
+        border-top: 1px solid grey;
+    }
+    .dangki{
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    .footer-mobile .info{
+        margin-left: 25px;
+    }
+    .footer-mobile .info a{
+        text-decoration: none;
+        color: black;
+    }
+    .source{
+        margin-top: 15px;
+    }
+    /* End-Footer */
+}
+/* Menu dành cho Desktop màn hình cỡ lớn */
+@media all and (min-width:1200px){
+    .header .header-desktop .menu-desktop ul li.item {
+        display: inline-block;
+        list-style: none;
+        padding: 30px 22px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .logo-menu {
+        margin-left: 50px;
+    }
+    .giohang{
+        right: 70px;
+    }
+    span.fa.fa-stack {
+        font-size: 8px;
+        color: #e47f13;
+    }
+    .header .header-desktop  .menu-desktop ul li:hover ul.child-menu{
+        display: block;
+        border: 1px solid black;
+        background: rgba(0, 0 ,0 , 0.9 );
+    }
+    .menu-desktop ul li:hover{
+        background: #696969;
+    }
+    .menu-desktop .list-menu li:hover a{
+        color: white;
+    }
+    button.cart-icon.dropdown-toggle:hover{
+        background: white;
+    }
+    button.cart-icon.dropdown-toggle:hover button.cart-total{
+        color:#ed3737;
+    }
+    button.cart-icon.dropdown-toggle:hover span#cart-total >span{
+        color:#ed3737;
+    }
+    button.cart-icon.dropdown-toggle:hover i.fa.fa-shopping-cart{
+        color:#ed3737;
+    }
+    .content-desktop .menu-head li:hover a{
+        color: orangered;
+    }
+    .content-desktop .menu-head li:hover i{
+        color: orangered;
+    }
+    .dropdown-menu li a:hover{
+        color: orangered;
+    }
+}

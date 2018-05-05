@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./Css/gioithieu.css">
+    <link rel="stylesheet" type="text/css" href="./Css/gioithieu_responsive.css">
+    <title>Giới Thiệu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        function openMenu() {
+            if (document.getElementById('menu').classList == "list-menu") {
+                document.getElementById('menu').classList = "list-menu open";
+            } else {
+                document.getElementById('menu').classList = "list-menu";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementsByClassName('back-to-top')[0].style.display = "block";
+            } else {
+                document.getElementsByClassName('back-to-top')[0].style.display = "none";
+            }
+        }
+
+        $(document).ready(function () {
+            $('#show-info').hide();
+            $('#click-info').click(function () {
+                $('#show-info').slideToggle();
+
+            });
+            $('#show-info2').hide();
+            $('#click-info2').click(function () {
+                $('#show-info2').slideToggle();
+            });
+            $('#search').click(function () {
+                $('.timKiem').toggleClass('active');
+                $('.active').css('display', 'block');
+            });
+            $('#login').click(function () {
+                $('.dangNhap').toggleClass('active_login');
+                $('.active_login').css('display', 'block');
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <section class="header">
+        <div class="header-desktop">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Menu-head -Desktop -->
+                    <div class="content-desktop">
+                        <div class="col-lg-5 col-md-4 col-sm-5">
+                            <span>
+                                <i class="fa fa-phone" aria-hidden="true"></i> ĐƯỜNG DÂY NÓNG: +84 165 564 6549</span>
+                        </div>
+                        <div class="col-lg-7 col-md-8 col-sm-7">
+                            <ul class="menu-head">
+                                <li>
+                                    <img src="./image/vn.png" alt="Tiếng Việt" title="Tiếng Việt">
+                                    <a href="#lang">Ngôn Ngữ</a>
+                                </li>
+                                <li id="login">
+                                    <i class="fa fa-user"></i>
+                                    <a href="#acc">Tài Khoản</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-heart"></i>
+                                    <a href="#favorite">Yêu Thích</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-share"></i>
+                                    <a href="#pay">Thanh Toán</a>
+                                </li>
+                                <li id="search">
+                                    <i class="fa fa-search"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form đăng nhập -->
+                <div class="import">
+                    <div class="dangNhap">
+                        <div class="form-dangNhap">
+                            <p class="user">
+                                Username:
+                                <br>
+                                <input type="tex" placeholder="Enter username here...">
+                            </p>
+
+                            <p class="pass">
+                                Password:
+                                <br>
+                                <input type="password" placeholder="Enter password here...">
+                            </p>
+
+                            <span class="forgot">
+                                <a href="#">Forgot password</a>
+                            </span>
+                            <span class="regis">
+                                <a href="#">Đăng kí tài khoản</a>
+                            </span>
+                            <p class="btnLogin">
+                                <button>Login</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timKiem ">
+                        <p id="form-search">
+                            <input type="text" placeholder="Nhập thông tin cần tìm kiếm...">
+                        </p>
+                        <p class="btnSearch">
+                            <button id="btn">Tìm kiếm</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- End form đăng nhập -->
+                <!-- Menu main -->
+                <div class="menu-desktop">
+                    <div class="fix-menu">
+                        <div class="logo-menu">
+                            <img src="./image/logo.png">
+                        </div>
+                        <ul class="list-menu">
+                            <li class="item">
+                                <a href="./index.html">Trang Chủ</a>
+                            </li>
+                            <li class="item">
+                                <a href="./gioithieu.html">Giới Thiệu</a>
+                            </li>
+                            <li class="item">
+                                <a href="./product-list.html">Sản Phẩm</a>
+                            </li>
+                            <li class="item">
+                                <a href="./contact">Liên Hệ</a>
+                            </li>
+                            <li class="item">
+                                <a href="./guide.html">Hướng Dẫn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="giohang">
+                        <div id="cart" class="main-cart-area cart_panel">
+                            <button type="button" class="cart-icon dropdown-toggle">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span id="cart-total">
+                                    <span class="num_product">0</span>
+                                    <span class="text-cart">sản phẩm</span>
+                                    <!-- <span class="price">0 VNĐ</span> -->
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu pull-right cart_dropdown">
+                                <li>
+                                    <p class="text-center">Giỏ Hàng đang trống!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- End Menu  -->
+            </div>
+        </div>
+        <!--Kết thúc Menu-head -Desktop -->
+
+        <!-- Menu-head -Mobile -->
+        <div class="content-mobile">
+            <div class="container-fuild">
+                <!-- Menu  head -->
+                <span>ĐƯỜNG DÂY NÓNG: +84 165.564.6549</span>
+                <hr>
+                <ul class="menu-head">
+                    <li>
+                        <i>
+                            <img src="./image/vn.png" alt="Tiếng Việt" title="Tiếng Việt">
+                        </i>
+                    </li>
+                    <li>
+                        <i class="fa fa-user"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-heart"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-share"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-search"></i>
+                    </li>
+                </ul>
+                <div class="giohang">
+                    <div id="cart" class="main-cart-area cart_panel">
+                        <button type="button" class="cart-icon dropdown-toggle">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span id="cart-total">
+                                <span class="num_product">0</span>
+                                <span class="text-cart">sản phẩm</span>
+                                <!-- <span class="price">0 VNĐ</span> -->
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu pull-right cart_dropdown">
+                            <li>
+                                <p class="text-center">Giỏ Hàng đang trống!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <!-- Kết thúc menu head -->
+
+                <!-- Bắt đầu Menu main -->
+                <div class="menu-mobile">
+                    <div class="logo-menu">
+                        <img src="./image/logo.png">
+                    </div>
+                    <button class="menu-icon" onclick="openMenu()">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <ul id="menu" class="list-menu">
+                        <li class="item">
+                            <a href="./index.html">Trang Chủ</a>
+                        </li>
+                        <li class="item">
+                            <a href="./gioithieu.html">Giới Thiệu</a>
+                        </li>
+                        <li class="item">
+                            <a href="./product-list.html">Sản Phẩm</a>
+                        </li>
+                        <li class="item">
+                            <a href="./contact.html">Liên Hệ</a>
+                        </li>
+                        <li class="item">
+                            <a href="./guide.html">Hướng Dẫn</a>
+                        </li>
+
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- Kết thúc Menu main -->
+            </div>
+        </div>
+        <!-- Kết thúc Menu-head -Mobile -->
+    </section>
+    <!-- HEADER-END. -->
+    <section class="background-head">
+        <div class="container-fluid">
+            <div class="background">
+                <div class="sologan">
+                    <span>Giới thiệu</span>
+                </div>
+            </div>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <li style="color:white;">Trang Chủ</li>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <a href="./product-list.html">
+                            <li style="color:white;">Giới thiệu</li>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- BODY -->
+    <section class="content">
+        <div class="container">
+            <p>Hầu hết mỗi công ty đều có bài giới thiệu về doanh nghiệp mình, nhưng để có được một bài giới thiệu đầy đủ, hiệu
+                quả để chinh phục được khách hàng cũng như đối tác thì không phải doanh nghiệp nào cũng làm được.</p>
+            <p>Đặc biệt khi mà nền kinh tế vẫn còn khủng hoảng với rất nhiều khó khăn càng đẩy sự cạnh tranh lên cao, thì một
+                bài giới thiệu tốt sẽ là một yếu tố không nhỏ giúp Doanh nghiệp bạn chứng tỏ được khả năng cũng như thế mạnh
+                của mình. Ngoài ra với một bài giới thiệu được trình bày một cách chuyên nghiệp, sẽ đem lại sự thiện cảm
+                ban đầu cho người xem, đó là một lợi thế mà các doanh nghiệp nên nắm bắt.</p>
+            <p>Nếu như về phần giới thiệu sản phẩm thường có rất nhiều bài khác nhau, nhưng với bài giới thiệu doanh nghiệp
+                lại chỉ có một. Chính vì vậy cần một sự đầu tư kỹ lưỡng cả về nội dung lẫn hình thức, vì nó phần nào thể
+                hiện bộ mặt của toàn doanh nghiệp.</p>
+            <p>Vậy làm sao để có bài giới thiệu doanh nghiệp hoàn thiện và thu hút người xem tối ưu nhất ?</p>
+            <p>Trước tiên, bài giới thiệu cần có phần tóm lược đầy đủ mọi thông tin về Doanh nghiệp gồm : lịch sử hình thành
+                và phát triển. Tên đầy đủ của doanh nghiệp.</p>
+            <p>Sau đó giới thiệu tổng quát về ngành nghề hoạt động, mạng lưới hoạt động. Và điều cuối cùng là những mục tiêu
+                hướng đến cùng những thành quả đã đạt được….</p>
+            <p>Bên cạnh bố cục thông thường thì bài giới thiệu cần được viết một cách ngắn gọn và súc tích nhất nhằm đưa đến
+                cho người đọc nhanh chóng nắm rỏ về công ty, doanh nghiệp. Do đó việc lựa chọn từ ngữ cũng hết sức quan trọng.
+                Các từ ngữ phải diễn đạt tốt và logic cũng như truyền tải được những mong muốn của ban điều hành doanh nghiệp
+                đưa ra.</p>
+            <p>Song song với những bài giơi thiệu được đăng trên những trang web chính của doanh nghiệp, thì các bài viết giới
+                thiệu còn hết sức cần thiết và hữu hiệu hơn khi được đăng lên các website uy tín có sức tuyên truyền và quảng
+                bá rộng. Điều này giúp hình ảnh thương hiệu công ty bạn đến gần với các đối tác, khách hàng.</p>
+            <p>Cũng chính vì được nhiều người biết đến, do đó những bài viết như thế cần nhiều sự chăm chút hơn. Ngoài mục đích
+                giới thiệu đến mọi người thì bài viết này cần hướng người đọc đến hành vi mua hàng hoặc ít nhất là ghé thăm
+                website chính.</p>
+            <p>Đó chính là vấn đề cốt lõi mà một bài viết giới thiệu cần làm được, và để làm được điều đó thì người viết phải
+                là một người giỏi về khả năng diễn đạt, chuyên sâu về lĩnh vực viết lời giới thiệu, quảng cáo
+            </p>
+            <p>(CopyWriter) cũng như sự tìm hiểu sâu sắc về doanh nghiệp ấy. Có như vậy thì bài viết giới thiệu mới phát huy
+                hết sức mạnh và đem lại nguồn khách hàng tiềm năng cho Doanh nghiệp.</p>
+            <p>Doanh nghiệp bạn đã có những bài giới thiệu như thế chưa ?</p>
+            <p>Đừng bỏ qua một cơ hội nào vì khách hàng luôn tin tưởng, lựa chọn những doanh nghiệp có sự đầu tư kỹ lưỡng, chuyên
+                nghiệp về hình ảnh thương hiệu cũng như có sự quảng bá rộng rãi. Ngoài ra, quảng bá trên website chính là
+                sự quảng bá nhanh chóng và mang lại hiệu quả lâu dài.</p>
+        </div>
+    </section>
+    <!-- BODY-END. -->
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="footer-head">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="footer-icon">
+                            <a href="#">
+                                <i class="fa fa-truck"></i>
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                            <a>Đổi Trả Hàng</a>
+                            <p>Đổi trả hàng nhanh chóng</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="footer-icon">
+                            <a href="#">
+                                <i class="fa fa-usd"></i>
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                            <a>Vận Chuyển Miễn Phí</a>
+                            <p>Miễn phí vận chuyển trong khu vực</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4" style="border-right:none">
+                        <div class="footer-icon">
+                            <a href="#">
+                                <i class="fa fa-life-ring"></i>
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                            <a>Giảm Giá VIP</a>
+                            <p>VIP sẽ được giảm giá</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerlast">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="logol">
+                            <a href="./index.html">
+                                <img src="http://0510.chilibusiness.net/image/catalog/0510/logo-phukienfooter.png">
+                            </a>
+
+                            <div class="address">
+                                <p>
+                                    <a href="#">
+                                        <i class="fa  fa-map-marker"></i> Địa chỉ: Hồng Quang, Ứng Hòa, Thành Phố Hà Nội. </a>
+                                </p>
+
+                                <p>
+                                    <a href="#linktelephone">
+                                        <i class="fa fa-phone"></i> +84 165 564 6549</a>
+                                </p>
+                                <p>
+                                    <a href="#">
+                                        <i class="fa fa-fax"></i> +84 165 564 6549</a>
+                                </p>
+                                <p>
+                                    <a href="mailto:ngtrdai290197@gmail.com">
+                                        <i class="fa fa-envelope-o"></i> ngtrdai290197@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="
+                    padding-left: 55px;">
+                        <h3>Thông tin</h3>
+                        <ul class="iffooter">
+                            <li>
+                                <a href="./guide">Hướng dẫn</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách riêng tư</a>
+                            </li>
+                            <li>
+                                <a href="#">Thỏa thuận sử dụng</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều khoản sử dụng</a>
+                            </li>
+                            <li>
+                                <a href="#">Sơ đồ trang</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="
+                    padding-left: 55px;">
+                        <h3>Khách hàng</h3>
+                        <ul class="iffooter">
+                            <li>
+                                <a href="#thuonghieu">Thương hiệu</a>
+                            </li>
+                            <li>
+                                <a href="#phieuquatang">Phiếu quà tặng</a>
+                            </li>
+                            <li>
+                                <a href="#banhang">Bán hàng</a>
+                            </li>
+                            <li>
+                                <a href="#khuyenmai">Khuyến mãi</a>
+                            </li>
+                            <li>
+                                <a href="#doitrahang">Đổi trả hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <h3>Đăng Kí Nhận Tin </h3>
+                        <form>
+                            <input type="text" placeholder="Nhập email của bạn!">
+                            <input class="dangki" type="submit" value="Đăng Kí">
+                        </form>
+                        <div class="icon-footer-right">
+                            <ul>
+                                <li>
+                                    <a href="http://facebook.com" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://plus.google.com" target="_blank">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://instagram.com" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://youtube.com" target="_blank">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <span style="position: fixed;" class="back-to-top" onclick="topFunction()">
+                    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                </span>
+            </div>
+            <hr>
+            <div class="source">
+                <p>© 2015 Copyright by DQ Phụ Kiện – Số ĐKKD 1111 – Tại sở Kế Hoạch và Đầu Tư TP.HCM – (Chính sách riêng tư)</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <!-- Footer-Mobile -->
+    <section class="footer-mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-content">
+                        <div class="logol">
+                            <a href="./index.html">
+                                <img src="./image/logo-footer.png">
+                            </a>
+                        </div>
+                        <div class="address">
+                            <p>
+                                <i class="fa  fa-map-marker"></i> &nbsp; Địa chỉ: Hồng Quang, Ứng Hòa, Thành Phố Hà Nội. </p>
+                            <p>
+                                <i class="fa fa-phone"></i> &nbsp; +84 165 564 6549</p>
+                            <p>
+                                <i class="fa fa-fax"></i> &nbsp; +84 165 564 6549</p>
+                            <p>
+                                <a href="mailto:ngtrdai290197@gmail.com">
+                                    <i class="fa fa-envelope-o"></i> &nbsp; ngtrdai290197@gmail.com</a>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="info">
+                        <a id="click-info">
+                            <h4>Thông tin</h4>
+                        </a>
+                        <div id="show-info">
+                            <p>Hướng dẫn </p>
+                            <p>Chính sách riêng tư </p>
+                            <p>Thỏa thuận sử dụng </p>
+                            <p>Điều khoản sử dụng </p>
+                            <p>Sơ đồ trang</p>
+                        </div>
+                        <a id="click-info2">
+                            <h4>Khách hàng</h4>
+                        </a>
+                        <div id="show-info2">
+                            <p>Thương Hiệu </p>
+                            <p>Phiếu Quà Tặng</p>
+                            <p>Bán Hàng </p>
+                            <p>Khuyến Mãi </p>
+                            <p>Đổi Trả Hàng</p>
+                        </div>
+                    </div>
+                    <div class="dangki">
+                        <h4>Đăng Kí Nhận Tin </h4>
+                        <form>
+                            <input type="text" placeholder="Nhập email của bạn!">
+                            <input type="submit" value="Đăng Kí">
+                        </form>
+                        <div class="icon-footer-right">
+                            <ul>
+                                <li>
+                                    <a href="http://facebook.com" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://plus.google.com" target="_blank">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://instagram.com" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://youtube.com" target="_blank">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="source">
+                <p>© 2015 Copyright by Go phụ kiện – Số ĐKKD 1111 – Tại sở Kế Hoạch và Đầu Tư TP.HCM – (Chính sách riêng tư)
+                </p>
+            </div>
+        </div>
+        <span style="position: fixed;right: 20px;" class="back-to-top" onclick="topFunction()">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </span>
+    </section>
+    <!-- End Footer-Mobile -->
+
+</body>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>

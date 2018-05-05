@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 50%;
+}
+.border-sp{
+    padding: 15px;
+    border: 1px solid gray;
+    text-align: center;
+    background: white;
+    /* height: 390px; */
+}
+.container {
+    background: #ececec;
+}
+.button button {
+    padding: 0 15px;
+    font-size: 20px;
+}
+.button button:hover{
+    color: #ed3737;
+    background: #fff;
+    border: 2px solid #ed3737;
+}
+p.giohang {
+    padding: 15px;
+    font-size: 26px;
+    color: orangered;
+}
+p.content-sp {
+    color: darkviolet;
+    font-size: 17px;
+}
+.pay {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+}
+p.gh_trong {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+}
+.home {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+p.thanhtoan {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+button:hover{
+    border: 2px solid #ed3737;
+    background: white;
+    color: #ed3737;
+}
+@media (min-width: 1200px)
+{
+.col-lg-6 {
+    width: 50%;
+    padding: 15px;
+    }
+}

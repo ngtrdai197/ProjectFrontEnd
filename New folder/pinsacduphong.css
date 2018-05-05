@@ -1,0 +1,418 @@
+.clearfix{
+    clear: both;
+}
+body{
+    line-height: 1;
+}
+img{
+    max-width: 100%;
+    z-index: 1;
+}
+.logo-menu img{
+    padding: 0;
+}
+.menu-head li img{
+    padding: 0;
+}
+
+/* Menu cho Ipad pro */
+.giohang{
+    top: 25px;
+    position: absolute;
+    right: 5px;
+}
+.logo-menu{
+    margin-left: 15px;
+}
+.menu-desktop{
+    position: relative;
+    background: #696969;
+}
+.fix-menu{
+    float: left;
+}
+/* Kết thúc Menu dành cho Ipad pro */
+
+/* Header */
+.container-fluid{
+    padding: 0;
+}
+.header .header-desktop .menu-desktop ul li.item {
+    display: inline-block;
+    list-style: none;
+    padding: 30px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.header .header-desktop  .menu-desktop ul li.item a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.container-fluid{
+    padding: 0;
+}
+.header{
+    width: 100%;
+}
+.header .container-fluid .row{
+    margin: 0;
+}
+.header .content-desktop .menu-head li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+}
+.header .content-desktop .menu-head a{
+    text-decoration: none;
+    color: white;
+}
+.header .content-desktop span{
+    color: yellow;
+    font-size: 13px;
+}
+
+.header .content-desktop li{
+    color: white;
+}
+.header .fa-phone{
+    font-size: 18px;
+}
+.header .content-desktop{
+    background: #828282;
+    height: 55px;
+    padding: 18px 0 0 37px;
+}
+ul.child-menu{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 354px;
+     z-index: 1;
+    padding-right: 40px;
+    line-height: 20px;
+}
+ul.child-menu li{
+    display: list-item;
+    list-style: none;
+    line-height: 20px;
+    padding: 10px 0;    
+}
+ul.child-menu li a{
+    color: white;
+}
+
+.logo-menu{
+    float: left;
+    padding-top: 14px;
+}
+.menu-desktop {
+    background: #827564;
+}
+
+ul.list-menu{
+    float: left;
+    margin-bottom: 0;
+    position: relative;
+}
+
+button.cart-icon.dropdown-toggle {
+    background: #ed3737;
+    padding: 5px 9px;
+    border: 1px solid red;
+}
+
+.giohang i.fa.fa-shopping-cart {
+    color: white;
+}
+span#cart-total >span {
+    color: white;
+    font-size: 12px;
+}
+
+.logo{
+    max-width: 100%;
+    margin-top: -13px;
+}
+/* Kết thúc header */
+
+.sologan{
+    text-align: center;
+    margin-top: -8em;
+}
+section.background-head{
+    height: 240px;
+    background: #827564;
+    position: relative;
+}
+.background-head .sologan span{
+    font-size: 40px;
+    color: white;
+}
+.background-head li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px;
+    
+}
+.link{
+    position: absolute;
+    bottom: 17px;
+    right: 15px;
+    color: white;
+}
+
+/* Content-Menu Sản Phẩm */
+
+.content ul a{
+    color: black;
+    text-decoration: none;
+}
+.content ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-bottom: 1px solid black;
+    background: #e8e8e8;
+}
+
+.content ul{
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 0;
+}
+.ds{
+    color: floralwhite;
+    font-style: unset;
+    background: #696969;
+    font-size: 25px;
+    padding: 8px 15px;
+}
+section.content {
+    margin-top: 40px;
+}
+.scale-image {
+    border: 1px solid gray;
+    text-align: center;
+    position: relative;
+    -webkit-perspective: 1000px;
+    /* đặt ở thẻ relative px càng cao góc càng nhỏ */
+    cursor: pointer;
+}
+.content-price a{
+    font-size: 16px;
+    text-decoration: none;
+    color: unset;
+}
+.cont {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+}
+span.price-new {
+    font-size: 16px;
+    color: blue;
+}
+.priceleft {
+    margin: 5px 0;
+    padding: 23px 15px;
+    width: 100%;
+}
+span.fa.fa-stack {
+    font-size: 10px;
+}
+.new {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    border: 1px solid darkgray;
+    padding: 10px;
+    border-radius: 5px;
+    color: red;
+}
+.content .hover-image span{
+    font-size: 14px;
+    padding: 11px 5px;
+}
+.content .hover-image{
+    position: absolute;
+    background: #828282;
+    width: 50%;
+    top: 0;
+    height: 100%;
+    -webkit-transform: translateY(0%);
+    -webkit-transform: rotateX(0deg);
+    transition: all ease 5s;
+    -webkit-transform-origin: 0% 50%;
+    opacity: 0;
+}
+.hover-beau {
+    margin-top: 20%;
+}
+.sp-hover {
+    margin-top: 33px;
+    text-align: center;
+}
+
+.border-grid {
+    margin-bottom: 45px;
+}
+span.price-old {
+    text-decoration: line-through;
+}
+.col-lg-4.col-md-4.col-sm-6.col-xs-12 {
+    height: 375px;
+}
+/* => END - Content-Menu Sản Phẩm */
+
+
+/* Footer */
+
+.footer{
+    background: #DCDCDC;
+    width: 100%;
+    border-top: 1px solid burlywood;
+}
+
+.footerlast{
+    width: 100%;
+    position: relative;
+    padding: 0 45px;
+}
+.footerlast .dangki:hover{
+    background: skyblue;
+    color: azure;
+    border-radius: 10px;
+}
+.footer .row{
+    margin: 0;
+}
+.logol img{
+    margin-left: 25px;
+    
+}
+.address{
+    margin-left: 25px;
+    float: left;
+}
+.address i{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.col-lg-3 ul li{
+    list-style: none;
+    line-height: 25px;
+}
+.col-lg-3 ul li a{
+    color: black;
+    text-decoration: none;
+}
+.address p a{
+    color: black;
+    text-decoration: none;
+}
+.iffooter{
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footerlast .icon-footer-right ul li{
+    display: inline-block;
+    padding-right: 25px;
+}
+.icon-footer-right{
+    margin-top: 15px;
+    width: 229px;
+}
+.icon-footer-right ul li i{
+    color: black;
+    font-size: 27px;
+}
+.footerlast form{
+    font-size: 14px;
+}
+.footerlast .row h3{
+    font-size: 19px;
+}
+.footer .footerlast ul{
+    padding: 0;
+    margin: 0;
+}
+.footer .footerlast .col-lg-3{
+    padding: 0;
+}
+.icon-footer-right a i:hover{
+    color: skyblue;
+}
+.source{
+    text-align: center;
+}
+.back-to-top{
+    font-size: 80px;
+    position: fixed;
+    bottom: 6px;
+    right: 40px;
+    cursor: pointer;
+}
+.back-to-top:hover{
+    color: skyblue;
+}
+
+ul.menu-head{
+    padding: 0;
+    margin-left: 123px;
+}
+.footer-icon{
+    width: 77px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+.footer-icon:hover{
+    background: white;
+}
+.footer-icon:hover i{
+    color: #e47f13;
+}
+
+.footer .footer-head .col-lg-4{
+    padding-left: 30px;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+.footer .footer-head i{
+    font-size: 50px;
+    padding: 11px;
+}
+.footer .footer-head .row .footer-content{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.footer .footer-head a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+}
+.footer .footer-head p{
+    font-size: 12px;
+    margin: 10px 0;
+}
+i.fa.fa-usd{
+    padding-left: 22px;
+}
+.footer-head {
+    padding: 15px 0;
+}
+.footer .footer-head .row{
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin: 0 60px;
+}
+.footerlast a:hover{
+    color: blue;
+}
+
+/* End Footer */

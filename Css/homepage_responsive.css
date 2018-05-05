@@ -1,0 +1,377 @@
+.header-desktop{
+    display: block;
+}
+.content-mobile{
+    display: none;
+    padding: 6px 0px;
+}
+.content-mobile ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 19px;
+    line-height: 31px;
+}
+.content-mobile span{
+    color: royalblue;
+    padding-bottom: 2px;
+    font-size: 16px;
+}
+.content-mobile .menu-head{
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.footer-mobile{
+    display: none;
+}
+.footer{
+    display: block;
+}
+
+/* Responsive cho thiết bị mobile -> Ipad màn hình <= 991px */
+@media all and (max-width:992px){
+    .hover-image span{
+        padding: 23px 17px;
+    }
+    .timKiem{
+        height: 0px;
+    }
+    p#form-search{
+        float: left !important;
+        top: 15px !important;
+        left: 5px !important;
+    }
+    input[type="text"]{
+        font-size: 17px !important;
+    }
+    p.btnSearch{
+        float: right !important; 
+         top: 15px !important; 
+         right: 5px !important;
+    }
+    button#btn{
+        font-size: 12px;
+    }
+    .timKiem.active{
+        height: 60px;
+        overflow: hidden;
+    }
+    .header-desktop{
+        display: none;
+    }
+    .menu-desktop{
+        background: #696969;
+    }
+    .content-mobile{
+        display: block;
+    }
+    .content-mobile{
+        text-align: center;
+    }
+    .content-mobile .giohang{
+        position: inherit;
+        margin: 0;
+    }
+    a:hover{
+        text-decoration: none !important;
+    }
+    span.num_product{
+        color: white;
+    }
+    span.text-cart{
+        color: white;
+    }
+    .logo-menu {
+        padding: 10px;
+        float: left;
+    }
+    button.menu-icon{
+        float: right;
+        font-size: 39px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .content-mobile .list-menu{
+        display: block;
+    }
+    .content-mobile .item{
+        display: list-item;
+    }
+    .content-mobile .item a{
+        display: list-item;
+        font-size: 20px;
+        padding: 4px 0;
+        color: black;
+        border-bottom: 1px solid gray;
+        text-decoration: none;
+    }
+
+    .item-spham ul{
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 1s ease-in-out;
+    }
+    .item-spham ul li{
+        padding: 0;
+        display: inline;
+    }
+    
+    .content-mobile .list-menu{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        top: 250px;
+        left: 0;
+        background: #f1f2f7;
+        height: 0;
+        overflow: hidden;
+        transition: height 1s ease-in-out;
+        padding: 0;
+    }
+
+    .list-menu.open {
+        height: 197px;
+    }
+    .content-mobile .menu-head li{
+        padding: 0 20px;
+        font-size: 19px;
+    }
+    .content-mobile .giohang-mobile button.cart-icon.dropdown-toggle {
+        padding: 5px;
+        background: gray;
+        border: none;
+    }
+    button.cart-icon.dropdown-toggle{
+        font-size: 25px;
+    }
+    .content .row .hover-image{
+        height: 61px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 25px;
+    }
+    .title{
+        margin-bottom: 15px;
+    }
+    .title h3{
+        margin-left: 0;
+        font-size: 22px;
+        width: 110px;
+    }
+    .title-newproduct h3{
+        margin-left: 0;
+    }
+    .content .col-xs-12 {
+        height: 395px; 
+        /*hiệu ứng hover thêm vào giỏ */
+    }
+    .slide-background{
+        background: url("./image/banner_home_background.jpg") no-repeat;
+        height: 101px;
+    }
+    ._slider{
+        display: none;
+    }
+
+    .banner-quangcao{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .header{
+        background: #c3bbbb;
+    }
+    section.content{
+        padding-top: 40px;
+    }
+    .content-bottom{
+        margin-top: 45px;
+    }
+    .hover-catch{
+        display: none;
+    }
+    .container-fluid>.navbar-header {
+        margin-right: 0;
+    }
+    .footer{
+        display: none;
+    }
+    .footer-mobile{
+        display: block;
+        background: #ddd;
+    }
+    .footer-mobile .address a{
+        text-decoration: none;
+        color: black;
+    }
+    .footer-mobile .dangki li{
+        list-style: none;
+        display: inline-block;
+    }
+    .footer-mobile .dangki li i{
+        font-size: 28px;
+        padding: 0 10px;
+    }
+    .footer-mobile .icon-footer-right ul{
+        padding: 0;
+    }
+    .footer-mobile .row{
+        padding-top: 15px;
+        border-top: 1px solid grey;
+    }
+    .dangki{
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    .footer-mobile .info{
+        margin-left: 25px;
+    }
+    .footer-mobile .info a{
+        text-decoration: none;
+        color: black;
+    }
+    .source{
+        margin-top: 15px;
+    }
+    span.back-to-top {
+        font-size: 60px;
+    }
+    .border-grid {
+        border: 1px solid #696969;
+        height: 345px;
+        position: relative;
+    }
+    span.back-to-top .fa{
+        font-size: 40px;
+    }
+    span.back-to-top {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* Menu dành cho Desktop màn hình cỡ lớn */
+@media all and (min-width:1230px){
+    .header .header-desktop .menu-desktop ul li.item {
+        display: inline-block;
+        list-style: none;
+        padding: 30px 22px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .logo-menu {
+        margin-left: 50px;
+    }
+    span.fa.fa-stack {
+        font-size: 8px;
+        color: black;
+    }
+    span.fa.fa-stack:hover {
+        color: #e47f13;
+    }
+    
+    .border-grid {
+        border: 1px solid #696969;
+        height: 345px;
+        position: relative;
+    }
+    .slide-background {
+        height: 367px;
+    }
+    
+    .menu-desktop ul li:hover{
+        background: #696969;
+        border-bottom: 3px solid orangered;
+    }
+    button.cart-icon.dropdown-toggle:hover{
+        background: white;
+    }
+    button.cart-icon.dropdown-toggle:hover button.cart-total{
+        color:#ed3737;
+    }
+    button.cart-icon.dropdown-toggle:hover span#cart-total >a{
+        text-decoration: none;
+        color:#ed3737;
+    }
+    button.cart-icon.dropdown-toggle:hover i.fa.fa-shopping-cart{
+        color:#ed3737;
+    }
+    .content-desktop .menu-head li:hover a{
+        color: orangered;
+    }
+    .content-desktop .menu-head li:hover i{
+        color: orangered;
+    }
+    .dropdown-menu li a:hover{
+        color: orangered;
+    }
+    .content-price a:hover{
+        color: orangered;
+    }
+    .content .row .hover-image span:hover{
+        background: #e47f13;
+    }
+    
+    .banner1:hover img{
+        transform: scale(1.1);
+        transition:  all 1s;
+    
+    }
+    .banner2:hover img{
+        transform: scale(1.1);
+        transition:  all 1s;
+    }
+    .content-bottom .border-grid:hover img{
+        transform: scale(1);
+    }
+    .content-bottom .border-grid:hover
+    {
+        border: 1px solid green;
+    }
+    .content-bottom .border-grid:hover img{
+        transform: scale(-1,1);
+        /* Hình ảnh xoay 1 vòng */
+        transition: all 1.3s;
+    }
+    .border-grid:hover .new{
+        border: 2px solid skyblue;
+        background: firebrick;
+        color: white;
+    }
+    
+    .scale-image .textbox:hover h3{
+        color: rgb(3, 3, 61);
+    }
+    .scale-image:hover .textbox{
+        left: 0%;
+        background: #ed3737;    
+        opacity: 0.9;
+        transform: all ease 4.4s;
+        /* cho textbox nằm trong border-image
+        và cách left 0%(=0) */
+    }
+}
+
+@media all and (min-width:1095px) and (max-width: 1199px){
+    .header .header-desktop .menu-desktop ul li.item{
+        padding: 30px 10px;
+    }
+}
+@media all and (min-width:1300px){
+    .giohang{
+        right: 30px;
+    }
+}
+@media all and (min-width:993px) and (max-width: 1199px){
+    .hover-image span {
+        padding: 24px 10px;
+        font-size: 11px;
+    }
+    .border-grid{
+        height: 315px;
+    }
+}
