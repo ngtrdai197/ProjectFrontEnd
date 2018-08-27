@@ -45,21 +45,23 @@
                 document.getElementById('menu').classList = "list-menu";
             }
         }
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+        $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('.back-to-top').fadeIn();
+                    } else {
+                        $('.back-to-top').fadeOut();
+                    }
+                });
 
-        function scrollFunction() {
-
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                document.getElementsByClassName('back-to-top')[0].style.display = "block";
-            } else {
-                document.getElementsByClassName('back-to-top')[0].style.display = "none";
-            }
-        }
+                // scroll body to 0px on click
+                $('.back-to-top').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
 
     </script>
     <title>Sản phẩm</title>

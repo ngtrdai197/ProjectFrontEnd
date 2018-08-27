@@ -1,4 +1,4 @@
-.clearfix{
+﻿.clearfix{
     clear: both;
 }
 body{
@@ -289,7 +289,7 @@ span#cart-total >span {
     color: white;
 }
 .background{
-    background-image: url(D:/CODE/Front-End/Project/image/background_pagetily.jpg);
+    background-image: url(D:/CODE/ProjectFrontEnd/image/background_pagetily.jpg);
     height: 250px;
     background-position: center center;
     background-size: cover;

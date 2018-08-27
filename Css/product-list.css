@@ -1,4 +1,4 @@
-.clearfix{
+﻿.clearfix{
     clear: both;
 }
 body{
@@ -306,7 +306,7 @@ span#cart-total >span {
     color: white;
 }
 .background{
-    background-image: url(D:/CODE/Front-End/Project/image/background_pagetily.jpg);
+    background-image: url(D:/CODE/ProjectFrontEnd/image/background_pagetily.jpg);
     height: 250px;
     background-position: center center;
     background-size: cover;
@@ -621,8 +621,8 @@ i.fa.fa-usd{
 span.back-to-top{
     position: absolute;
     transform: translate(-50%,-50%);
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 2px solid #00567d;
     background: #04a9f5;
@@ -630,7 +630,7 @@ span.back-to-top{
 }
 span.back-to-top .fa{
     position: absolute;
-    font-size: 60px;
+    font-size: 45px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
