@@ -3,7 +3,10 @@ $(document).ready(function () {
         url: "https://api.myjson.com/bins/yp4i5",
         method: "GET",
         success: function (data) {
+            var listData = data;
+            var gioHang = [];
             var html = "";
+            var countProduct = JSON.parse(window.localStorage.getItem('gioHang', JSON.stringify(gioHang)));
             for (var i = 0; i < data.length; i++) {
                 html += '<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">';
                 html += '        <div class="border-grid">';
@@ -74,6 +77,7 @@ $(document).ready(function () {
                             if (gioHang[i].name == listData[index].name) {
                                 gioHang[i].quantity++;
                                 window.localStorage.setItem('gioHang', JSON.stringify(gioHang));
+                                alert("Thêm sản phẩm vào giỏ thành công!");
                                 return;
                             }
                         }
@@ -81,13 +85,13 @@ $(document).ready(function () {
                             name: listData[index].name,
                             price: listData[index].newPrice,
                             quantity: 1,
-                            url_GH:listData[index].getUrl
+                            url_GH: listData[index].getUrl
                         });
                         window.localStorage.setItem('gioHang', JSON.stringify(gioHang));
                         alert("Thêm sản phẩm vào giỏ thành công!");
                     }
                 }
-                $('.num_product').html(gioHang.length);
+                $('.num_product').html(countProduct.length);
             });
         },
         error: function (errror) {
@@ -170,6 +174,7 @@ $(document).ready(function () {
                             if (gioHang[i].name == listData[index].name) {
                                 gioHang[i].quantity++;
                                 window.localStorage.setItem('gioHang', JSON.stringify(gioHang));
+                                alert("Thêm sản phẩm vào giỏ thành công!");
                                 return;
                             }
                         }
@@ -177,7 +182,7 @@ $(document).ready(function () {
                             name: listData[index].name,
                             price: listData[index].newPrice,
                             quantity: 1,
-                            url_GH:listData[index].getUrl
+                            url_GH: listData[index].getUrl
                         });
                         window.localStorage.setItem('gioHang', JSON.stringify(gioHang));
                         alert("Thêm sản phẩm vào giỏ thành công!");
